@@ -143,3 +143,31 @@ for(member <- family; guest <- guests)
 val memberNames = for(member <- family) yield member.name
 for (name <- memberNames)  println(name)
 ```
+
+# Inheritance (triat)
+Here comes the controversial topic ;)
+* traits are interfaces
+* abstract classes are possible
+* trait members are initialized in classes with val qualifer with the member
+* 
+(*unfinished*)
+```scala
+trait Vehical {
+   def speed : Int;
+  def drive() = "I am moving at " +speed +" kmph";
+}
+
+class BullockCart extends Vehical {
+  val speed = 5;
+}
+
+trait Mechanical {
+  def power : int
+  def myPower() = "I have " +power +" horsepower"
+}
+
+abstract Car extends Vehical {
+
+  val power = 50;
+  def drive() = 
+}
