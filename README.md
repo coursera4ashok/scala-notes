@@ -147,9 +147,10 @@ for (name <- memberNames)  println(name)
 # Inheritance (triat)
 Here comes the controversial topic ;)
 * traits are interfaces
-* abstract classes are possible
+* trait can even define member fields
 * trait members are initialized in classes with val qualifer with the member
-* 
+* abstract classes are possible as well
+ 
 (*unfinished*)
 ```scala
 trait Vehical {
